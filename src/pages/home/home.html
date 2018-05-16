@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      ZapNews
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    Usuários cadastrados:
+    <p>
+      <button ion item *ngFor="let user of users | async" (click)="onChatCreate(user)">
+        {{user.name}}
+      </button>
+    </p>
+  </ion-list>
+  <button ion-button block (click)="onSignup()"> Cadastre-se </button>
+
+</ion-content>
