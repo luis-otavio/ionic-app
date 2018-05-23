@@ -22,27 +22,37 @@
 
     <ion-item>
       <ion-icon name="person" item-left> </ion-icon>
-      <ion-input type="text" placeholder="Name" formControlName="name"></ion-input>
+      <ion-input type="text" placeholder="Nome" formControlName="name"></ion-input>
     </ion-item>
 
     <ion-item>
-        <ion-icon name="at" item-left> </ion-icon>
-        <ion-input type="text" placeholder="Username" formControlName="username"></ion-input>
+      <ion-icon name="at" item-left> </ion-icon>
+      <ion-input type="text" placeholder="Usuário" formControlName="username"></ion-input>
     </ion-item>
 
     <ion-item>
-        <ion-icon name="mail" item-left> </ion-icon>
-        <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
-      </ion-item>
+      <ion-icon name="call" item-left> </ion-icon>
+      <ion-input type="text" mask="(99) 99999-9999" placeholder="Telefone" formControlName="telephone"></ion-input>
+    </ion-item>
 
-      <ion-item>
-          <ion-icon name="lock" item-left> </ion-icon>
-          <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
-        </ion-item>
+    <ion-item>
+      <ion-icon name="card" item-left> </ion-icon>
+      <ion-input type="text" mask="999.999.999-99" placeholder="CPF" formControlName="cpf"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-icon name="mail" item-left> </ion-icon>
+      <ion-input type="email" placeholder="E-mail" formControlName="email"></ion-input>
+    </ion-item>
 
-        <br>
+    <ion-item>
+      <ion-icon name="lock" item-left> </ion-icon>
+      <ion-input type="password" placeholder="Senha" formControlName="password"></ion-input>
+    </ion-item>
 
-        <button ion-button full type="submit" [disabled]="signupForm.invalid"> Criar Conta </button>
+    <br>
+
+    <button ion-button full type="submit" [disabled]="signupForm.invalid"> Criar Conta </button>
 
   </form>
 
